@@ -1,9 +1,12 @@
-
+import { UserButton } from "@clerk/nextjs";
 
 const page = () => {
   return (
-    <div>this is page route(Protected)</div>
-  )
-}
+    <div>
+      <div>this is page route(Protected)</div>
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
+};
 
-export default page
+export default page;
